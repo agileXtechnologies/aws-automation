@@ -4,11 +4,13 @@
 # In[ ]:
 
 
-import subprocess, time, os, getpass
+import subprocess, time, os, getpass, pyfiglet
 def gscaleLogin():
     count= 0
-    print("Gscale-Global Scale")
-    print("-------------------")
+    print("------------------------------------------------------")
+    ascii_banner = pyfiglet.figlet_format("gscale\nGlobal Scale")
+    print(ascii_banner)
+    print("------------------------------------------------------")
     print("\ngscale is built on AWS CloudFront for scaling your appliction automatically and with ease.\nIt is in beta phase of development. You can smoothly scale Web Application on Apache(Httpd) Webserver\nNOTE: This will charge you money!")
     print("You should have a AWS Account for using this tool")
     print("Author: Shubham Bhalala")
